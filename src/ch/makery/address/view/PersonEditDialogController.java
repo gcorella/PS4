@@ -27,8 +27,6 @@ public class PersonEditDialogController {
     private TextField cityField;
     @FXML
     private TextField birthdayField;
-
-
     private Stage dialogStage;
     private Person person;
     private boolean okClicked = false;

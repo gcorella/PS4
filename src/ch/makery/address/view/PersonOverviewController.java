@@ -33,7 +33,6 @@ public class PersonOverviewController {
 
     // Reference to the main application.
     private MainApp mainApp;
-
     /**
      * The constructor.
      * The constructor is called before the initialize() method.

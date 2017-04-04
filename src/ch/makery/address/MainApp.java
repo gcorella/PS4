@@ -27,17 +27,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class MainApp extends Application {
-
     private Stage primaryStage;
     private BorderPane rootLayout;
-    /**
-     * The data as an observable list of Persons.
-     */
     private ObservableList<Person> personData = FXCollections.observableArrayList();
-
-    /**
-     * Constructor
-     */
     public MainApp() {
         // Add some sample data
         personData.add(new Person("Hans", "Muster"));
@@ -50,11 +42,6 @@ public class MainApp extends Application {
         personData.add(new Person("Stefan", "Meier"));
         personData.add(new Person("Martin", "Mueller"));
     }
-
-    /**
-     * Returns the data as an observable list of Persons. 
-     * @return
-     */
     public ObservableList<Person> getPersonData() {
         return personData;
     }
@@ -284,11 +271,9 @@ public class MainApp extends Application {
             dialogStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
-
             // Set the persons into the controller.
             BirthdayStatisticsController controller = loader.getController();
             controller.setPersonData(personData);
-
             dialogStage.show();
 
         } catch (IOException e) {

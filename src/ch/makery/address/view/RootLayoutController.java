@@ -37,7 +37,6 @@ public class RootLayoutController {
         mainApp.getPersonData().clear();
         mainApp.setPersonFilePath(null);
     }
-
     /**
      * Opens a FileChooser to let the user select an address book to load.
      */

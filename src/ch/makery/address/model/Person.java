@@ -12,11 +12,6 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-/**
- * Model class for a Person.
- *
- * @author Marco Jakob
- */
 public class Person {
 
     private final StringProperty firstName;
@@ -32,13 +27,6 @@ public class Person {
     public Person() {
         this(null, null);
     }
-
-    /**
-     * Constructor with some initial data.
-     * 
-     * @param firstName
-     * @param lastName
-     */
     public Person(String firstName, String lastName) {
         this.firstName = new SimpleStringProperty(firstName);
         this.lastName = new SimpleStringProperty(lastName);
@@ -97,7 +85,6 @@ public class Person {
     public IntegerProperty postalCodeProperty() {
         return postalCode;
     }
-
     public String getCity() {
         return city.get();
     }
